@@ -20,8 +20,8 @@ class HashTable:
     
     def get_item(self, key):
         index = self.hash(key)
-        if self.data_map[index] is None:
-            for pair in self.data_map[index]:
+        if self.data_map[index] is not None:
+            for i  in self.data_map[index]:
                 if pair[0] == key:
                     return pair[1]
         return None
