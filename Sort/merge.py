@@ -1,7 +1,10 @@
 def merge_sort(arr):
     n = len(arr)
-    left = arr[:n]
-    right = arr[n:]
+    if n <= 1:
+        return arr
+    mid = n //2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
 
     def merge(list1, list2):
         combined = []
@@ -19,10 +22,12 @@ def merge_sort(arr):
             combined.append(list1[i])
             i += 1
         
-        while j < len(list1):
+        while j < len(list2):
             combined.append(list2[j])
             j += 1
         
         return combined
+    return merge(left, right)
+
     
         
