@@ -27,14 +27,6 @@ This repository contains my self-learning journey through **Data Structures and 
    git clone https://github.com/your-username/dsa-using-python.git
    cd dsa-using-python
    ```
-
-2. Run any script with Python:
-   ```
-   python path/to/your_script.py
-   ```
-
-3. (Optional) Open `.ipynb` notebooks using Jupyter for step-by-step code walkthroughs.
-
 > Ensure you have Python 3.7+ installed.
 
 ## 🧪 Testing
