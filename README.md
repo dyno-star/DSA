@@ -1,6 +1,3 @@
-from pathlib import Path
-
-dsa_readme_content = """
 # 📚 DSA Using Python - Self Learning
 
 ## Overview
