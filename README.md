@@ -71,17 +71,4 @@ This project is ongoing and updated regularly as I explore more problems and pat
 
 This is a personal learning repo, but if you'd like to suggest improvements or spot errors, feel free to open an issue or pull request!
 
-## 📄 License
 
-This repository is open-sourced under the **MIT License**.
-
-## ✉️ Contact
-
-For feedback or discussion, you can reach me via GitHub issues or at [your-email@example.com].
-"""
-
-# Save the content to a .md file
-dsa_readme_path = Path("/mnt/data/DSA_README.md")
-dsa_readme_path.write_text(dsa_readme_content.strip())
-
-dsa_readme_path.name
