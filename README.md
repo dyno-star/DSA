@@ -18,14 +18,6 @@ This repository contains my self-learning journey through **Data Structures and 
 - Greedy Algorithms
 - Heaps and Priority Queues
 
-## 📁 Structure
-
-Each folder contains:
-
-- `README.md` (where applicable) with explanations or notes
-- Python implementations of data structures or algorithms
-- Example problems and solutions
-- Occasionally test files or Jupyter notebooks for experimentation
 
 ```
 dsa-using-python/
