@@ -19,16 +19,6 @@ This repository contains my self-learning journey through **Data Structures and 
 - Heaps and Priority Queues
 
 
-```
-dsa-using-python/
-│
-├── arrays/
-├── linked_lists/
-├── trees/
-├── dynamic_programming/
-├── sorting/
-└── ...
-```
 
 ## ▶️ How to Run
 
