@@ -10,6 +10,7 @@ def binarySearch(arr, target):
             left = mid + 1
         else:
             right = mid - 1
+    return -1
     
 A = [0, 2, 4, 6, 8, 10]
 print(binarySearch(A, 2))
