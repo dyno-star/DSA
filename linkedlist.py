@@ -50,9 +50,9 @@ class LinkedList:
             self.head = None
             self.tail = None
         else:
-            pre = None
+            previous = None
             while temp.next is not None:
-                pre = temp
+                previous = temp
                 temp = temp.next
             self.tail = pre
             self.tail.next = None
