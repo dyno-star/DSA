@@ -54,7 +54,7 @@ class LinkedList:
             while temp.next is not None:
                 previous = temp
                 temp = temp.next
-            self.tail = pre
+            self.tail = previous
             self.tail.next = None
         return temp.value
     
@@ -130,6 +130,19 @@ class LinkedList:
             temp.next = before
             before = temp
             temp = after
+    '''
+    LEETCODE PURPOSES
+    temp = head
+    before = None
+
+    while temp:
+        after = temp.next
+        temp.next = before
+        before = temp
+        temp = after
+
+    return before
+    '''
         
     
 
