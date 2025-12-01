@@ -1,3 +1,5 @@
+
+#Hash Map
 def twoSum(nums, target):
     seen = {}
     for i, num in enumerate(nums):
