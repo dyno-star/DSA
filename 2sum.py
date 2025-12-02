@@ -7,7 +7,7 @@ def twoSum(nums, target):
         if complement in seen:
             return [seen[complement], i]
         seen[num] = i
-    return i
+    return []
 
     #Brute Force
     def twoSum(num, target):
