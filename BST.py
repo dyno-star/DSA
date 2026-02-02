@@ -70,7 +70,7 @@ class BST:
         traverse(self.root)
         return result
     
-
+#print after each node has been traversed
     def dfs_post_order(self):
         if not self.root:
             return []
@@ -84,7 +84,7 @@ class BST:
         traverse(self.root)
         return result
     
-    #traverse left,print the left node that has either the left child traversed or no child at all then traverse right
+    #traverse left,print the left node that has either the left child traversed or no child at all then traverse right(left most thing first)
     def dfs_in_order(self):
         if not self.root:
             return []
