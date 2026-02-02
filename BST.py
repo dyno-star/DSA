@@ -55,7 +55,8 @@ class BST:
             if current.right:
                 queue.append(current.right)
         return result
-    
+
+    #print node as it is discovered
     def dfs_pre_order(self):
         if not self.root:
             return []
@@ -69,6 +70,7 @@ class BST:
         traverse(self.root)
         return result
     
+
     def dfs_post_order(self):
         if not self.root:
             return []
@@ -82,6 +84,7 @@ class BST:
         traverse(self.root)
         return result
     
+    #traverse left,print then traverse right
     def dfs_in_order(self):
         if not self.root:
             return []
