@@ -84,7 +84,7 @@ class BST:
         traverse(self.root)
         return result
     
-    #traverse left,print then traverse right
+    #traverse left,print the left node that has either the left child traversed or no child at all then traverse right
     def dfs_in_order(self):
         if not self.root:
             return []
