@@ -28,8 +28,8 @@ class BST:
                     temp.right = new_node
                     return True
                 temp = temp.right
-    
-    def contains(self, value):
+    #change contain to search
+    def search(self, value):
         if self.root is None:
             return False
         temp = self.root
@@ -41,6 +41,7 @@ class BST:
             else:
                 return True
         return False
+
     def BFS(self):
         if not self.root:
             return []
