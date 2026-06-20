@@ -67,9 +67,10 @@ class LinkedList:
             self.head = None
             self.tail = None
         else:
-            temp = self.head.next
-            self.head = temp
-            
+            self.head = self.head.next
+
+        temp.next = None
+        self.length -= 1
         return temp.value
 
     def get(self, index):
