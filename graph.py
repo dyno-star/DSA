@@ -38,10 +38,40 @@ class Graph:
             del self.adj_list[vertex]
             return True
         return False
-            
-        
 
-    
+    def bfs(self, start):
+        if start not in self.adj_list:
+            return []
+        visited = set()
+        queue = [start]
+        visited.add(start)
+        result = []
+        while queue:
+            vertex = queue.pop(0)
+            result.append(vertex)
+            for neighbor in self.adj_list[vertex]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+        return result
+
+    def dfs(self, start):
+        if start not in self.adj_list:
+            return []
+        visited = set()
+        result = []
+
+        def _dfs(vertex):
+            visited.add(vertex)
+            result.append(vertex)
+            for neighbor in self.adj_list[vertex]:
+                if neighbor not in visited:
+                    _dfs(neighbor)
+
+        _dfs(start)
+        return result
+
+
 my_graph = Graph()
 my_graph.add_vertex('A')
 my_graph.add_vertex('B')
